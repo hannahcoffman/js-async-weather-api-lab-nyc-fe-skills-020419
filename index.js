@@ -7,7 +7,8 @@ function handleFormSubmit(event) {
   // step 1. grab the city they entered in the text box
   const input = document.getElementById('city')
   const city = input.value
-  fetch()
+  fetchCurrentWeather(city)
+  fetchFiveDayForecast(city)
 }
 
 function fetchCurrentWeather(city) {
