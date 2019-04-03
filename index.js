@@ -2,7 +2,10 @@ const API_KEY = "9d24d77e476276943dd49c4ab3d451fb"
 
 function handleFormSubmit(event) {
   //handle submit event
-  console.log('sup')
+  event.preventDefault()
+  // what do you do when they click submit? 
+  // step 1. grab the city they entered in the text box
+  const city = 
 }
 
 function fetchCurrentWeather(city) {
