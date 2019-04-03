@@ -5,7 +5,9 @@ function handleFormSubmit(event) {
   event.preventDefault()
   // what do you do when they click submit? 
   // step 1. grab the city they entered in the text box
-  const city = 
+  const input = document.getElementById('city')
+  const city = input.value
+  fetch()
 }
 
 function fetchCurrentWeather(city) {
