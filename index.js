@@ -21,6 +21,8 @@ function fetchCurrentWeather(city) {
 
 function displayCurrentWeather(json) {
   //render current weather data to the DOM using provided IDs and json from API
+  // need to get main.temp
+  console.log(main.temp)
 }
 
 
