@@ -13,7 +13,7 @@ function handleFormSubmit(event) {
 
 function fetchCurrentWeather(city) {
   //fetch current weather based on city
-  fecth('https://api.openweathermap.org/data/2.5/weather?q=' + city)
+  fecth('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + API_KEY)
   // pass options to api add the ? and then q for query 
 }
 
