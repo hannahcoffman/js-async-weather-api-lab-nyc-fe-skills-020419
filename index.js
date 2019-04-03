@@ -15,8 +15,8 @@ function fetchCurrentWeather(city) {
   //fetch current weather based on city
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + API_KEY)
   // pass options to api add the ? and then q for query 
-  .then()
-  .then()
+  .then((data) => {return data.json()})
+  .then( (json) => {console.log(json)})
 }
 
 function displayCurrentWeather(json) {
