@@ -27,5 +27,5 @@ function createChart(json) {
 
 document.addEventListener('DOMContentLoaded', function() {
   //add event listener here for form submission
-  
+document.addEventListener('submit', )
 })
