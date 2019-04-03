@@ -40,6 +40,7 @@ function displayCurrentWeather(json) {
 
 function fetchFiveDayForecast(city) {
   //fetch five day forecast data based on city
+  const fiveDay = json.
  
 }
 
