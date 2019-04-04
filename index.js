@@ -61,7 +61,8 @@ function displayFiveDayForecast(json) {
    "<p>" + forecast.dt_txt + "</p></div>"
    startingString += divString
  }
- aside.innerHTML = sta
+ const adide = document.getElementById('five-day')
+ aside.innerHTML = startingString
 }
 
 function createChart(json) {
