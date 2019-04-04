@@ -53,9 +53,8 @@ function displayFiveDayForecast(json) {
  const forecasts = json.list
  for (let forecast of forecasts){
    // make a box 
-   // 1. document.createElement
-   // 2. 
-   document.createElement('div')
+   // 1. document.createElement = document.createElement('div') when you do this it will always stay there.
+   // 2. set innerHTML to be a string it will clear out and replace everything in that
  }
 }
 
