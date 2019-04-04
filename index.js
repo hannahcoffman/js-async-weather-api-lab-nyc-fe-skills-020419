@@ -51,14 +51,17 @@ function displayFiveDayForecast(json) {
   // have 40/39 forecasts and we want to make divs for each of them 
  // regular for loop = for(let i=0; i <40; i++){
  const forecasts = json.list
+ 
+ let startingString =''
  for (let forecast of forecasts){
    // make a box 
    // 1. document.createElement = document.createElement('div') when you do this it will always stay there.
    // 2. set innerHTML to be a string it will clear out and replace everything in that
    let divString = "<div><p>" + forecast.main.temp_min + "</p>" + "<p>" + forecast.main.temp_max + "</p>" +
    "<p>" + forecast.dt_txt + "</p></div>"
-   
+   startingString += divString
  }
+ aside.innerHTML = sta
 }
 
 function createChart(json) {
