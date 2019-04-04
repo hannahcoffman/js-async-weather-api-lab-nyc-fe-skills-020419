@@ -69,11 +69,12 @@ function displayFiveDayForecast(json) {
 
 function createChart(json) {
   //Bonus: render temperature chart using five day forecast data and ChartJS
-  const ctx= document.getElementById('WeatherChart').getContext('2d');
-  const chart = new Chart(ctx, {
-    type: 'bar',
+  const ctx = document.getElementById('WeatherChart').getContext('2d');
+  const labels = json.list.map((forecast) => {return forecast.dt_txt})
+  new Chart(ctx, {
+    type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: labels,
         datasets: [{
             label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
