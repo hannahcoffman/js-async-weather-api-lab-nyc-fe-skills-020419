@@ -51,6 +51,7 @@ function displayFiveDayForecast(json) {
   // have 40/39 forecasts and we want to make divs for each of them 
  // regular for loop = for(let i=0; i <40; i++){
  const forecasts = json.list
+ createChart(json)
  
  let startingString =''
  for (let forecast of forecasts){
@@ -69,7 +70,7 @@ function displayFiveDayForecast(json) {
 function createChart(json) {
   //Bonus: render temperature chart using five day forecast data and ChartJS
   const ctx= document.getElementById('WeatherChart').getContext('2d');
-  new Chart(ctx, {
+  const chart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
