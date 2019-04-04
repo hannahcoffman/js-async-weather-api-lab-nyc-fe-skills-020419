@@ -57,8 +57,9 @@ function displayFiveDayForecast(json) {
    // make a box 
    // 1. document.createElement = document.createElement('div') when you do this it will always stay there.
    // 2. set innerHTML to be a string it will clear out and replace everything in that
-   let divString = "<div><p>" + forecast.main.temp_min + "</p>" + "<p>" + forecast.main.temp_max + "</p>" +
-   "<p>" + forecast.dt_txt + "</p></div>"
+   let divString = "<div><p>" + forecast.main.temp_min + "</p>" + 
+   "<p>" + forecast.main.temp_max + "</p>" +
+   "<p>" + forecast.dt_txt + "</p> </div>"
    startingString += divString
  }
  const aside = document.getElementById('five-day')
