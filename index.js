@@ -40,7 +40,7 @@ function displayCurrentWeather(json) {
 
 function fetchFiveDayForecast(city) {
   //fetch five day forecast data based on city
- fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + '&appid=' + API_KEY + '&units=imperial')
+ fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=' + API_KEY + '&units=imperial')
  .then( (data) => {return data.json()})
  .then( (json) => {displayFiveDayForecast(json)})
 }
