@@ -52,7 +52,10 @@ function displayFiveDayForecast(json) {
  // regular for loop = for(let i=0; i <40; i++){
  const forecasts = json.list
  for (let forecast of forecasts){
-   console.log(forecasts)
+   // make a box 
+   // 1. document.createElement
+   // 2. 
+   document.createElement('div')
  }
 }
 
