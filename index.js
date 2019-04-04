@@ -48,6 +48,11 @@ function fetchFiveDayForecast(city) {
 function displayFiveDayForecast(json) {
   //render five day forecast data to the DOM using provided IDs and json from API
   console.log(json)
+  // have 40/39 forecasts and we want to make divs for each of them 
+ // regular for loop = for(let i=0; i <40; i++){
+ for (let forecast of forecasts)
+    
+  }
 }
 
 function createChart(json) {
